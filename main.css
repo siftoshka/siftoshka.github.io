@@ -310,6 +310,7 @@ html.w-mod-touch * {
 .w-button {
 	display: inline-block;
 	padding: 9px 15px;
+	margin-right: 10px;
 	background-color: #3898EC;
 	color: #fff;
 	border: 0;
@@ -2245,126 +2246,6 @@ h1 {
 	color: #fff
 }
 
-.p1.link.primary.glyphy:hover {
-	color: #fc0
-}
-
-.p1.link.primary.overlay:hover {
-	color: #00f
-}
-
-.p1.link.primary.dribbble:hover {
-	color: #fc5293
-}
-
-.p1.link.primary.instagram:hover {
-	color: #fc4e5b
-}
-
-.p1.link.primary.twitter:hover {
-	color: #1ba8ff
-}
-
-.p1.link.primary.linkedin:hover {
-	color: #0075b4
-}
-
-.p1.link.primary.darkmodedesign:hover {
-	color: #fae8da
-}
-
-.p1.link.sketch:hover {
-	color: #fa6400
-}
-
-.p1.link.figma:hover {
-	color: #5551ff
-}
-
-.p1.link.webflow:hover {
-	color: #4253ff
-}
-
-.p1.link.sizzy:hover {
-	color: #7968f5
-}
-
-.p1.link.marvel:hover {
-	color: #1fb6ff
-}
-
-.p1.link.invision:hover {
-	color: #f36
-}
-
-.p1.link.framer:hover {
-	color: #05f
-}
-
-.p1.link.notion:hover {
-	color: #eb5757
-}
-
-.p1.link.zapier:hover {
-	color: #ff4a00
-}
-
-.p1.link.zeplin:hover {
-	color: #ffa80e
-}
-
-.p1.link.flowmapp:hover {
-	color: #0d87ff
-}
-
-.p1.link.slack:hover {
-	color: #af30be
-}
-
-.p1.link.whereby:hover {
-	color: #0aac8f
-}
-
-.p1.link.zoom:hover {
-	color: #1379f7
-}
-
-.p1.link.mimo:hover {
-	color: #62d76b
-}
-
-.p1.link.awwwards:hover {
-	color: #49c5b6
-}
-
-.p1.link.landbook:hover {
-	color: #16a13a
-}
-
-.p1.link.cssdesignawards:hover {
-	color: #c394ff
-}
-
-.p1.link.mindsparklemag:hover {
-	color: #ffa0a0
-}
-
-.p1.link.siteinspire:hover {
-	color: #f33
-}
-
-.p1.link.onepagelove:hover {
-	color: #eb3656
-}
-
-.p1.link.lapaninja:hover {
-	color: #6869fa
-}
-
-.p1.link.producthunt:hover {
-	color: #e95024
-}
-
 .p1.hero {
 	color: #fff;
 	font-weight: 500
@@ -2388,18 +2269,6 @@ h1 {
 
 .p2.link {
 	text-decoration: underline
-}
-
-.p2.link.webflow:hover {
-	color: #4253ff
-}
-
-.p2.link.jetbrains:hover {
-	color: #167dff
-}
-
-.p2.link.inter:hover {
-	color: gold
 }
 
 .p2.link.cookie {
@@ -2729,4 +2598,76 @@ h1 {
 	src: url('https://uploads-ssl.webflow.com/5ea270df387c0066ee6ffb68/5ea6395870b505777048cdbf_JetBrainsMono-Medium.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ea270df387c0066ee6ffb68/5ea639358ad6b6ee059ce405_JetBrainsMono-Medium.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ea270df387c0066ee6ffb68/5ea6394749d1a77328185cd3_JetBrainsMono-Medium.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ea270df387c0066ee6ffb68/5ea6390b8ad6b60f4c9ce0cc_JetBrainsMono-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
+}
+
+
+.my-projects {
+	font-family: 'JetBrains Mono', sans-serif;
+	font-size: small;
+	color: white;
+}
+
+.my-projects .my-projects-container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-rows: auto;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-top: 30px;
+}
+
+.my-projects .my-projects-container .child {
+	width: 100%;
+	text-align: center;
+	border-radius: 20px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	padding: 20px 20px;
+}
+
+.padding-left-right {
+	height: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.my-projects-container a{
+	color: white;
+	text-decoration: none;
+}
+
+.my-projects .my-projects-container .habitube:hover {
+	transition: 0.5s border;
+	border: 2px solid #1db98d;
+}
+
+.my-projects .my-projects-container .cubemate:hover {
+	transition: 1s border;
+	border: 2px solid #5c6bc0;
+}
+
+.my-projects .my-projects-container .furrency:hover {
+	transition: 1s border;
+	border: 2px solid #ff6f6f;
+}
+
+.container-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.my-projects .my-projects-container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		margin-top: 30px;
+	}
+	.my-projects .my-projects-container .child {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.padding-left-right {
+		margin: 0;
+	}
 }
