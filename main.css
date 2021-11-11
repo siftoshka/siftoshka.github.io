@@ -2651,6 +2651,11 @@ h1 {
 	border: 2px solid #3ddc84;
 }
 
+.my-projects .my-projects-container .junkyconverter:hover {
+	transition: 1s border;
+	border: 2px solid #e2434b;
+}
+
 .container-center {
 	display: flex;
 	justify-content: center;
