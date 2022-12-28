@@ -1,2 +1,1 @@
 # siftoshka.github.io
-Fantastic
